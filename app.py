@@ -24,8 +24,8 @@ question = st.chat_input("Ask anything about SIET college....")
 
 if question:
   st.session_state.chat_hist.append(
-    ("role" : "assistant" , "content" : question))                          
-with st.chat_message("user")
+    {"role" : "assistant" , "content" : question})                          
+with st.chat_message("user"):
   st.write(question)
 
 with st.chat_message("assistant"):
@@ -33,7 +33,7 @@ with st.chat_message("assistant"):
    answer = ask_rag (question, embed_model, chunks, index, api_key = mykey)
    st.write(answer)
    st.session_state.chat_hist.append(
-     ("role" : "assistant" , "content" : answer))
+     {"role" : "assistant" , "content" : answer})
 
 if st.button("Clear chat"):
   st.session_state.chat_hist = []
