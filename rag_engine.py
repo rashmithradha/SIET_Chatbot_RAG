@@ -58,7 +58,7 @@ def retrieve_content(question, embed_model, chunks, index, num_chunks=3):
   return background
 
   #Ask:
-  def ask_rag (question, index, embed_model, chunks):
+  def ask_rag (question, index, embed_model, chunks, api_key, model_name="all-MiniLM-L6-V2"):
     key = api_key
     if not key:
       raise ValueError("API key Missing")
