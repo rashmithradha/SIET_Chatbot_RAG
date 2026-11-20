@@ -24,7 +24,7 @@ question = st.chat_input("Ask anything about SIET college....")
 
 if question:
   st.session_state.chat_hist.append(
-    ("role" :"assistant" , "content" : question))                          
+    ("role" : "assistant" , "content" : question))                          
 with st.chat_message("user")
   st.write(question)
 
