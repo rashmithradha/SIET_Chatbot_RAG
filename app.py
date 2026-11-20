@@ -9,7 +9,7 @@ mykey = st.secrets["GROQ_API_KEY"]
 
 @st.cache_resource #deconstructs already loaded data
 def initiate_rag():
-return load_base("01_College_Information.pdf")
+   return load_base("01_College_Information.pdf")
 
 index, embed_model, chunks = initiate_rag()
 
