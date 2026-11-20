@@ -1,6 +1,6 @@
 import streamlit as st
 from rag_engine import load_base, ask_rag
-st.set_page_config(page_title = "SIET_Chatbot", layout = "centered")
+st.set_page_config(page_title = "SIET_Smart_Chatbot", layout = "centered")
 st.title("SIET-Chatbot")
 st.caption("Ask anything about college infprmation")
 st.caption("Created by rashmitha")
